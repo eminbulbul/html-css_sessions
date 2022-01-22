@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web page with float</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        header {
+            background-color: aqua;
+            border: 1px solid black;
+        }
+        
+        main {
+            background-color: blueviolet;
+            padding: 20px;
+            border: 1px solid black;
+            /* overflow: auto;  */
+            /* tasmalar icin en mantikli cozum budur */
+        }
+        
+        aside {
+            background-color: chartreuse;
+            border: 1px solid black;
+            width: 25%;
+            height: 300px;
+            float: left;
+        }
+        
+        article {
+            background-color: coral;
+            border: 1px solid black;
+            width: 70%;
+            height: 300px;
+            float: right;
+        }
+        
+        footer {
+            background-color: darkgray;
+            border: 1px solid black;
+        }
+        /* .clear {
+            clear: both;
+        } */
+        /* .clearfix::after {
+            content: "Some text";
+            clear: both;
+            display: block;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>HEADER</header>
+    <main class="clearfix">
+        <aside>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eius nam tempore provident, voluptatibus est temporibus, adipisci consequuntur nostrum minima cumque odit
+        </aside>
+        <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor laborum voluptatem soluta voluptates exercitationem labore odit doloribus. Perspiciatis consequuntur a eum asperiores delectus ducimus nemo itaque molestias quaerat rerum earum voluptates
+            hic magnam perferendis sunt pariatur fugit quibusdam, ratione soluta tempora at quas eligendi modi impedit? Aliquid itaque odit id ullam eligendi. Soluta facere excepturi id magni ipsam saepe labore doloremque, sunt ducimus aut quia asperiores
+            adipisci? Assumenda debitis autem quibusdam illum nostrum ullam mollitia. Ea nulla excepturi cupiditate doloribus?
+        </article>
+        <!-- <div class="clear"></div> -->
+    </main>
+    <footer>Weppage with float clarusway</footer>
+</body>
+
+</html>
