@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box {
+            border: 3px solid red;
+            width: 300px;
+            height: 70px;
+            margin-bottom: 80px;
+            /* birbirlerinden ayirsin diye margin verdik */
+        }
+        
+        #item1 {
+            overflow: visible;
+            /* bir degisiklik olmadi cunku default degeri visible */
+        }
+        
+        #item2 {
+            overflow: hidden;
+        }
+        
+        #item3 {
+            overflow: scroll;
+        }
+        
+        #item4 {
+            overflow: auto;
+        }
+        
+        #item5 {
+            overflow-x: hidden;
+            overflow-y: scroll;
+            /* x scrollu kapattik */
+            overflow: auto;
+        }
+        
+        #parag {
+            width: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box" id="item1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum tempora exercitationem, velit distinctio necessitatibus eum, voluptatibus neque ipsam quae harum fugit ratione fuga. Ipsa neque eligendi repellendus facilis perferendis fugiat, dolore
+        eaque. Maiores nulla voluptate nisi debitis maxime ut? Dolorem!</div>
+
+    <div class="box" id="item2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum tempora exercitationem, velit distinctio necessitatibus eum, voluptatibus neque ipsam quae harum fugit ratione fuga. Ipsa neque eligendi repellendus facilis perferendis fugiat, dolore
+        eaque. Maiores nulla voluptate nisi debitis maxime ut? Dolorem!</div>
+
+    <div class="box" id="item3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum tempora exercitationem, velit distinctio necessitatibus eum, voluptatibus neque ipsam quae harum fugit ratione fuga. Ipsa neque eligendi repellendus facilis perferendis fugiat, dolore
+        eaque. Maiores nulla voluptate nisi debitis maxime ut? Dolorem!</div>
+
+    <div class="box" id="item4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum tempora exercitationem, velit distinctio necessitatibus eum, voluptatibus neque ipsam quae harum fugit ratione fuga. Ipsa neque eligendi repellendus facilis perferendis fugiat, dolore
+        eaque. Maiores nulla voluptate nisi debitis maxime ut? Dolorem!</div>
+
+    <div class="box " id="item5">
+        <p id="parag">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum tempora exercitationem, velit distinctio necessitatibus eum, voluptatibus neque ipsam quae harum fugit ratione fuga. Ipsa neque eligendi repellendus facilis perferendis fugiat, dolore eaque.
+            Maiores nulla voluptate nisi debitis maxime ut? Dolorem!
+        </p>
+    </div>
+
+</body>
+
+</html>
