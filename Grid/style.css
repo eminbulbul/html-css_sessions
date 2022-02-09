@@ -5,15 +5,16 @@
     /* auto tum sayfaya sigdirir  */
     /* min max media querry gibi kullanilabilir. */
     /* grid-template-columns: 1fr 1fr 3fr 2fr; */
-    grid-template-columns: repeat(2, 1fr) 1fr repeat(2, 2fr);
-    /* grid-template-rows: 100px 300px 100px 100px; */
+    /* grid-template-columns: repeat(2, 1fr) 1fr repeat(2, 2fr); */
+    grid-template-columns: 100px 300px 100px 100px;
     /* grid-template-rows: repeat(3, 1fr) 500px; */
-    grid-template-rows: 100px 300px 100px 100px;
+    /* grid-template-rows: 100px 300px 100px 100px; */
+    grid-template-rows: 100px 500px 100px;
     /* Gap Ozellikleri */
-    column-gap: 20px;
-    row-gap: 10px;
+    /* column-gap: 20px;
+    row-gap: 10px; */
     /* Shortand */
-    gap: 30px 10px;
+    gap: 2px 2px;
 }
 
 .content {
@@ -28,3 +29,32 @@
     display: grid;
     justify-content: center;
 } */
+
+
+/* area tanimlama 1.yol  */
+
+.content1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: red;
+}
+
+.content4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: aquamarine
+}
+
+.content7 {
+    grid-column: 1/3;
+    grid-row: 3/5;
+    background-color: yellow;
+}
+
+
+/* 2.yol span => tane */
+
+.content6 {
+    grid-column: 3/span 2;
+    background-color: darkgoldenrod;
+}
